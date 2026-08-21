@@ -216,6 +216,77 @@
   font-size: 18px;
   line-height: 1.7;
 }
+.evidence-demo {
+  padding: 20px 7% 100px;
+  background: #0b1725;
+}
+
+.evidence-demo-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.evidence-panel {
+  max-width: 760px;
+  padding: 32px;
+  background: #07111f;
+  border: 1px solid rgba(97,213,255,.22);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.22);
+}
+
+.evidence-status {
+  color: #61d5ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.evidence-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  color: #aebdcb;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.evidence-row strong {
+  color: #f5f7fa;
+  font-size: 20px;
+}
+
+.evidence-row.variance strong {
+  color: #61d5ff;
+}
+
+.evidence-finding {
+  margin-top: 26px;
+  padding: 20px;
+  background: rgba(97,213,255,.06);
+  border-left: 3px solid #61d5ff;
+}
+
+.evidence-finding span {
+  color: #61d5ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.evidence-finding p {
+  margin-top: 10px;
+  color: #d3dde7;
+  line-height: 1.6;
+}
+
+.evidence-source {
+  margin-top: 20px;
+  color: #718295;
+  font-size: 13px;
+}
 </style>
 </head>
 
@@ -338,6 +409,38 @@
 </section>
 
 
+
+<section class="evidence-demo">
+  <div class="evidence-demo-inner">
+    <div class="evidence-panel">
+      <div class="evidence-status">PIPELINE DRIFT DETECTED</div>
+
+      <div class="evidence-row">
+        <span>CRM pipeline</span>
+        <strong>$2.4M</strong>
+      </div>
+
+      <div class="evidence-row">
+        <span>Billing records</span>
+        <strong>$1.9M</strong>
+      </div>
+
+      <div class="evidence-row variance">
+        <span>Detected variance</span>
+        <strong>$500K</strong>
+      </div>
+
+      <div class="evidence-finding">
+        <span>CAUSE TRACED</span>
+        <p>3 contracts changed after the CRM close date.</p>
+      </div>
+
+      <div class="evidence-source">
+        Evidence linked to 7 underlying records
+      </div>
+    </div>
+  </div>
+</section>
 <footer id="contact">
   © 2026 AtlasAIUSA · Arclight
 </footer>
