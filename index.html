@@ -112,6 +112,86 @@
       h1 { letter-spacing: -2px; }
       .hero p { font-size: 17px; }
     }
+ .platform {
+  padding: 90px 7%;
+  background: #07111f;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.platform-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.platform h2 {
+  max-width: 850px;
+  font-size: 38px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.platform-intro {
+  max-width: 800px;
+  color: #aebdcb;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 55px;
+}
+
+.flow {
+  display: flex;
+  align-items: stretch;
+  gap: 14px;
+}
+
+.flow-card {
+  flex: 1;
+  min-width: 0;
+  padding: 26px 22px;
+  background: #0b1725;
+  border: 1px solid rgba(97,213,255,.16);
+  border-radius: 12px;
+}
+
+.flow-card span {
+  display: block;
+  color: #61d5ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.flow-card h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.flow-card p {
+  color: #93a5b7;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: #61d5ff;
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  .flow {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+    padding: 4px 0;
+  }
+}
   </style>
 </head>
 
@@ -146,6 +226,63 @@
   </section>
 
   <section class="mission" id="mission">
+
+    <section class="platform" id="technology">
+  <div class="platform-inner">
+
+    <div class="eyebrow">HOW ARCLIGHT WORKS</div>
+
+    <h2>One always-on intelligence layer across your revenue stack.</h2>
+
+    <p class="platform-intro">
+      Arclight connects the systems behind your revenue picture and continuously
+      works across them — maintaining the data layer, monitoring for drift,
+      and surfacing the evidence behind every discrepancy.
+    </p>
+
+    <div class="flow">
+
+      <div class="flow-card">
+        <span>01</span>
+        <h3>DATA SOURCES</h3>
+        <p>CRM, billing, product usage, sales engagement, and warehouse data.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-card">
+        <span>02</span>
+        <h3>AUTONOMOUS AGENTS</h3>
+        <p>Agents continuously ingest data, write SQL, and maintain dbt models.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-card">
+        <span>03</span>
+        <h3>MONITOR</h3>
+        <p>Pipeline, models, and revenue signals are watched continuously for drift.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-card">
+        <span>04</span>
+        <h3>DETECT &amp; PROVE</h3>
+        <p>Arclight flags discrepancies and traces them back to the underlying records.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-card">
+        <span>05</span>
+        <h3>TRUST</h3>
+        <p>CRO, RevOps, and finance work from a revenue picture backed by evidence.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <h2>Your revenue stack has the data. Arclight makes sure it tells the truth.
 
