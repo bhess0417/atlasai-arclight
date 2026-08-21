@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arclight | AtlasAIUSA</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #f5f7fa;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 7%;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #61d5ff;
+    }
+
+    nav a {
+      color: #c7d2df;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      background:
+        radial-gradient(circle at 75% 40%, rgba(42,151,255,.16), transparent 32%),
+        linear-gradient(135deg, #07111f, #0a1b2d);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      color: #61d5ff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7vw, 92px);
+      line-height: .98;
+      letter-spacing: -3px;
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #aebdcb;
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 38px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #61d5ff;
+      color: #07111f;
+      padding: 16px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .mission {
+      padding: 80px 7%;
+      background: #0b1725;
+    }
+
+    .mission h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .mission p {
+      max-width: 760px;
+      color: #aebdcb;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 30px 7%;
+      color: #718295;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        display: none;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">ATLAS<span>AI</span>USA</div>
+
+  <nav>
+    <a href="#mission">Mission</a>
+    <a href="#technology">Technology</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="eyebrow">AN ATLASAIUSA INITIATIVE</div>
+
+      <h1>ARCLIGHT</h1>
+
+      <p>
+        Building intelligent technology around real human problems.
+        Arclight explores how artificial intelligence can help people
+        navigate difficult transitions, discover resources, and move
+        forward with greater independence.
+      </p>
+
+      <a class="button" href="#mission">Explore Arclight</a>
+
+    </div>
+  </section>
+
+  <section class="mission" id="mission">
+    <h2>Technology should create a path forward.</h2>
+
+    <p>
+      Some of life's hardest moments arrive without instructions.
+      Arclight is being built to change that — combining artificial
+      intelligence, practical guidance, and human-centered design to
+      help people understand their options and determine what comes next.
+    </p>
+  </section>
+</main>
+
+<footer id="contact">
+  © 2026 AtlasAIUSA · Arclight
+</footer>
+
+</body>
+</html>
